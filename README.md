@@ -1,5 +1,5 @@
-## @Author:Evandro Franco
-# @DEMO - Automação de Testes em Python (Behave, Selenium e Robot)
+## Author:Evandro Franco
+# DEMO - Automação de Testes em Python (Behave, Selenium e Robot)
 
 Este projeto é uma demo de automação com Behave e Robot, usando o google.com 
 
