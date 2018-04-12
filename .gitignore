@@ -1,0 +1,14 @@
+#main
+__pycache__/
+.vscode/
+.pytest_cache/
+debug.log
+.coverage
+run.bat
+
+#features
+features/__pycache__/
+features/steps/__pycache__/
+
+#target
+target/
