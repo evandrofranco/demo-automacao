@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on win32)" generated="20180413 09:00:26.160">
+<suite id="s1" name="Consulta" source="C:\WorkspacePython\demo-automacao\robot\features\consulta.robot">
+<test id="s1-t1" name="Consulta Google">
+<kw name="Given Acesso o google.com" library="BDD">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Acesso o google.com">
+<kw name="Abrir Browser na homepage do Google" library="consulta_detalhe">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${HOME URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180413 09:00:26.415" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com.br'.</msg>
+<status status="PASS" starttime="20180413 09:00:26.415" endtime="20180413 09:00:39.056"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180413 09:00:39.056" endtime="20180413 09:00:40.302"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20180413 09:00:40.302" endtime="20180413 09:00:40.303"></status>
+</kw>
+<kw name="Conferir home" library="consulta_detalhe">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${TITULO}</arg>
+</arguments>
+<msg timestamp="20180413 09:00:41.320" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" starttime="20180413 09:00:40.306" endtime="20180413 09:00:41.320"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:40.304" endtime="20180413 09:00:41.320"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:26.415" endtime="20180413 09:00:41.320"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:26.415" endtime="20180413 09:00:41.320"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:26.415" endtime="20180413 09:00:41.320"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:26.415" endtime="20180413 09:00:41.320"></status>
+</kw>
+<kw name="When Executo uma consulta" library="BDD">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Executo uma consulta">
+<kw name="Pesquiso um pais no Google" library="consulta_detalhe">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ID_CAMPO_TXT}</arg>
+<arg>${VAL_CAMPO_TXT}</arg>
+</arguments>
+<msg timestamp="20180413 09:00:41.320" level="INFO">Typing text 'Brasil' into text field 'lst-ib'.</msg>
+<status status="PASS" starttime="20180413 09:00:41.320" endtime="20180413 09:00:44.493"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20180413 09:00:44.493" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20180413 09:00:44.493" endtime="20180413 09:00:52.475"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<msg timestamp="20180413 09:00:53.500" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20180413 09:00:52.476" endtime="20180413 09:00:53.500"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:41.320" endtime="20180413 09:00:53.500"></status>
+</kw>
+<kw name="Abro a wikipedia" library="consulta_detalhe">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${CSS_WIKIPEDIA}</arg>
+</arguments>
+<msg timestamp="20180413 09:00:53.500" level="INFO">Clicking element 'css:#rso &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div &gt; div &gt; h3 &gt; a'.</msg>
+<status status="PASS" starttime="20180413 09:00:53.500" endtime="20180413 09:01:22.103"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:53.500" endtime="20180413 09:01:22.103"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:41.320" endtime="20180413 09:01:22.103"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:41.320" endtime="20180413 09:01:22.103"></status>
+</kw>
+<status status="PASS" starttime="20180413 09:00:41.320" endtime="20180413 09:01:22.103"></status>
+</kw>
+<kw name="Then Valido o retorno" library="BDD">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${keyword}</arg>
+</arguments>
+<kw name="Valido o retorno">
+<kw name="Valido que a pesquisa funcionou" library="consulta_detalhe">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${ID_TIT_WIKI}</arg>
+</arguments>
+<assign>
+<var>${VALOR_TITULO}</var>
+</assign>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<status status="FAIL" starttime="20180413 09:01:22.941" endtime="20180413 09:01:22.941"></status>
+</kw>
+<msg timestamp="20180413 09:01:22.945" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20180413 09:01:22.103" endtime="20180413 09:01:22.946"></status>
+</kw>
+<status status="FAIL" starttime="20180413 09:01:22.103" endtime="20180413 09:01:22.946"></status>
+</kw>
+<status status="FAIL" starttime="20180413 09:01:22.103" endtime="20180413 09:01:22.946"></status>
+</kw>
+<status status="FAIL" starttime="20180413 09:01:22.103" endtime="20180413 09:01:22.946"></status>
+</kw>
+<status status="FAIL" starttime="20180413 09:01:22.103" endtime="20180413 09:01:22.946"></status>
+</kw>
+<status status="FAIL" starttime="20180413 09:00:26.415" endtime="20180413 09:01:22.947" critical="yes">Execution terminated by signal</status>
+</test>
+<doc>Classe principal do Robot para Demo:
+Consulta no Google.com</doc>
+<status status="FAIL" starttime="20180413 09:00:26.162" endtime="20180413 09:01:22.951"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Consulta">Consulta</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180413 09:01:22.945" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>
