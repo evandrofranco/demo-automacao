@@ -13,4 +13,4 @@ robot/features/__pycache__/
 robot/features/steps/__pycache__/
 
 #target
-#robot/target/
+robot/target/
