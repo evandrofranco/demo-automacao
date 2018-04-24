@@ -1,1 +1,1 @@
-robot -d target features/consulta.robot
+robot -d target features/*.robot
