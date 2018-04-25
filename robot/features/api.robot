@@ -1,7 +1,7 @@
 *** Settings ***
 
 Documentation
-...       Classe principal do Robot para Demo:
+...       Classe principal do Robot para Demo de API:
 ...       Consulta na API do Cartola.com
 
 Resource    steps/BDD.robot

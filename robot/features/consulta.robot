@@ -1,7 +1,7 @@
 *** Settings ***
 
 Documentation
-...       Classe principal do Robot para Demo:
+...       Classe principal do Robot para Demo Web:
 ...       Consulta no Google.com
 
 Resource    steps/BDD.robot

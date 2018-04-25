@@ -1,8 +1,9 @@
 *** Settings ***
 
 Documentation
-...       Classe auxiliar do Robot para Demo:
-...       Com a implementação do BDD
+...       Classe auxiliar do Robot para Demo Web:
+...       Com a implementação do BDD para navegacao no Google
+
 Library           Selenium2Library
 
 *** Variable ***
